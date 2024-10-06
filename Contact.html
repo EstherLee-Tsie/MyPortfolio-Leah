@@ -3,105 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: linear-gradient(to bottom, #800080, #0000FF);
-            color: #E0E0E0; 
-            font-family: 'Arial', sans-serif;
-        }
-
-        h1, h2, h3 {
-            font-weight: bold;
-        }
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contact-form {
-            background: #700070;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            margin: 0 auto;
-            border: 2px solid rgba(224, 224, 224, 0.5); 
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background: #E6E6FF; 
-            color: #333; 
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: #E0E0E0; 
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2em;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .contact-details {
-            margin-top: 20px;
-            font-size: 1.2em;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #E0E0E0; 
-        }
-    </style>
+    <title>Contact</title>
 </head>
-<body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" style="color: #E0E0E0;">index</a></li>
-                <li><a href="About.html" style="color: #E0E0E0;">About</a></li>
-                <li><a href="Services.html" style="color: #E0E0E0;">Services</a></li>
-                <li><a href="Contact.html" style="color: #E0E0E0;">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
 
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <form class="contact-form" action="https://formspree.io/f/xzzpnyzk" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
+<!-- Background Styling -->
+<div style="background: linear-gradient(to bottom, purple, royalblue); min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+
+    <!-- Contact Form Section -->
+    <section style="text-align: center; margin-top: 50px;">
+        <h1 style="color: white; font-size: 3rem;">Contact Me</h1>
+
+        <form action="https://formspree.io/f/xzzpnyzk" method="POST" style="max-width: 500px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px;">
+            <label for="name" style="color: white; font-size: 1.2rem; display: block; margin-bottom: 10px;">Name:</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: none; border-radius: 5px;">
+
+            <label for="email" style="color: white; font-size: 1.2rem; display: block; margin-bottom: 10px;">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: none; border-radius: 5px;">
+
+            <label for="message" style="color: white; font-size: 1.2rem; display: block; margin-bottom: 10px;">Message:</label>
+            <textarea id="message" name="message" required style="width: 100%; padding: 10px; height: 100px; margin-bottom: 20px; border: none; border-radius: 5px;"></textarea>
+
+            <button type="submit" style="background-color: purple; color: white; padding: 10px 20px; font-size: 1.2rem; border: none; border-radius: 5px; cursor: pointer;">Send</button>
         </form>
-
-        <div class="contact-details">
-            <p><strong>Email:</strong> leahtsie@gmail.com</p>
-            <p><strong>Phone:</strong> 71506194</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/leah-tsie-235404264/" style="color: #E0E0E0;">Leah Tsie</a></p>
-        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Leah Tsie. All rights reserved.</p>
+    <!-- Contact Details Section -->
+    <section style="text-align: center; margin-bottom: 50px;">
+        <p style="color: white; font-size: 1.2rem;"><strong>Email:</strong> leahtsie@gmail.com</p>
+        <p style="color: white; font-size: 1.2rem;"><strong>Phone:</strong> 71506194</p>
+        <p style="color: white; font-size: 1.2rem;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/leah-tsie-235404264/" style="color: lightblue;">Leah Tsie</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="width: 100%; text-align: center; background-color: navy; padding: 20px;">
+        <p style="color: white; font-size: 1rem;">&copy; 2024 Leah Tsie. All rights reserved.</p>
     </footer>
+
+</div>
 </body>
 </html>
